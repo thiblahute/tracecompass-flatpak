@@ -1,0 +1,47 @@
+{
+  "app-id": "org.tracecompass.App",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.20",
+  "sdk": "org.gnome.Sdk",
+  "orgmand": "TraceCompass",
+  "finish-args": [
+      "--persist=.java",
+      "--share=ipc", "--socket=x11",
+      "--share=network",
+      "--filesystem=host"
+  ],
+  "modules": [
+      {
+          "name": "tracecompass",
+          "no-autogen": true,
+          "sources" : [
+              {
+                  "type": "archive",
+                  "url": "http://download.eclipse.org/tracecompass/releases/2.0.1/rcp/trace-compass-2.0.1-20160805-1655-linux.gtk.x86_64.tar.gz",
+                  "sha256": "6d9bfea7c2dfec54e5c2caf8adcfcf15efa1b5f668214ec024430a1aada70014"
+              },
+              {
+                  "type": "file",
+                  "path": "tracecompass-Makefile",
+                  "dest-filename": "Makefile"
+              }
+          ]
+      },
+      {
+          "name": "jre",
+          "no-autogen": true,
+          "sources" : [
+              {
+                  "type": "archive",
+                  "url": "https://files.eveoh.nl/jre-8u102-linux-x64.tar.gz",
+                  "sha256": "214ff6b52f5b1bccfc139dca910cea25f6fa19b9b96b4e3c10e699cd3e780dfb"
+              },
+              {
+                  "type": "file",
+                  "path": "jre-Makefile",
+                  "dest-filename": "Makefile"
+              }
+          ]
+      }
+  ]
+}
