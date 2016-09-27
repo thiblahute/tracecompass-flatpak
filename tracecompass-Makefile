@@ -1,0 +1,6 @@
+all:
+	true
+install:
+	mkdir -p /app/TraceCompass /app/bin
+	cp -ra * /app/TraceCompass
+	ln -s /app/TraceCompass/tracecompass /app/bin

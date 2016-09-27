@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2016 Thibault Saunier <tsaunier@gnome.org> -->
+<component type="desktop">
+ <id>org.tracecompass.App.desktop</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>Eclipse Public License 1.0</project_license>
+ <name>TraceCompass</name>
+ <summary>Eclipse Trace Compass is an open source application for viewing and analyzing any type of logs or traces.</summary>
+ <description>
+  <p>
+    Eclipse Trace Compass is an open source application for viewing and analyzing any type of logs or traces.
+    Its goal is to provide views, graphs, metrics, and more to help extract useful information from traces,
+    in a way that is more user-friendly and informative than huge text dumps.
+  </p>
+ </description>
+ <screenshots>
+  <screenshot type="default">
+   <image>http://tracecompass.org/img/shots/kernel.png</image>
+   <caption>The Kernel Analysis displays the states of processes and resources over time, using information from Linux kernel traces.</caption>
+  </screenshot>
+ </screenshots>
+ <url type="homepage">http://www.tracecompass.org/</url>
+</component>

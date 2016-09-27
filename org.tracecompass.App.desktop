@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=TraceCompass
+Comment=View and analyze any type of logs or traces.
+Exec=TraceCompass
+Icon=org.tracecompass.App.png
+Terminal=false
